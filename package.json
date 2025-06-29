@@ -1,0 +1,32 @@
+{
+  "name": "iroai",
+  "version": "1.0.0",
+  "description": "Generate color shades in CLI",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "iroai": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spider-hand/iroai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spider-hand/iroai/issues"
+  },
+  "homepage": "https://github.com/spider-hand/iroai#readme",
+  "keywords": [
+    "cli",
+    "color",
+    "shades",
+    "palette"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akinori Hoshina <creative.spider.hand@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.0"
+  }
+}
