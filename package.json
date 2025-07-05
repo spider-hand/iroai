@@ -2,10 +2,11 @@
   "name": "iroai",
   "version": "1.0.0",
   "description": "Generate color shades in CLI",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
-    "iroai": "./bin/index.js"
+    "iroai": "./bin/iroai.js"
   },
   "repository": {
     "type": "git",
@@ -21,12 +22,24 @@
     "shades",
     "palette"
   ],
+  "files": [
+    "dist",
+    "bin"
+  ],
   "scripts": {
+    "dev": "tsc && node bin/iroai.js",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Akinori Hoshina <creative.spider.hand@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "chalk": "^5.4.1",
     "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.10",
+    "ts-node": "^10.9.2"
   }
 }
