@@ -33,7 +33,7 @@ to launch interactive mode.
 | `-h, --help`    | Help text                                    |                                                             |            |
 | `-v, --version` | Version                                      |                                                             |            |
 | `-n, --name`    | Name of the color                            |                                                             |            |
-| `-p, --preset`  | Color preset to use                          | `ant`, `bootstrap`, `chakra`, `material` `tailwind`         | `tailwind` |
+| `-p, --preset`  | Color preset to use                          | `ant`, `bootstrap`, `chakra`, `material` `tailwind`, `uber` | `tailwind` |
 | `-m, --mode`    | Function to apply to the color shades        | `linear`, `quad`, `cubic`, `quart`, `quint`, `sine`, `expo` | `linear`   |
 | `-e, --ease`    | Easing function to apply to the color shades | `ease-in`, `ease-out`, `ease-in-out`                        | `ease-in`  |
 | `-s, --spread`  | Spread of the color shades                   | `narrow`, `normal`, `wide`                                  | `normal`   |
@@ -46,10 +46,11 @@ to launch interactive mode.
 - `chakra`: 50-950
 - `material`: 0-100
 - `tailwind`: 50-950
+- `uber`: 100-1600
 
 ### Format
 
-- `--format plain` (Default):
+- `plain` (Default):
 
 ```bash
 #FDDBE2 primary-50
@@ -65,7 +66,7 @@ to launch interactive mode.
 #2F0D13 primary-950
 ```
 
-- `--format css`:
+- `css`:
 
 ```css
 --primary-50: hsl(24, 98%, 37%);
@@ -81,7 +82,7 @@ to launch interactive mode.
 --primary-950: hsl(111, 90%, 37%);
 ```
 
-- `--format scss`:
+- `scss`:
 
 ```scss
 $primary-50: hsl(24, 98%, 37%);

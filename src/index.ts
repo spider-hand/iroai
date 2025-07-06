@@ -9,7 +9,8 @@ export type PresetOption =
   | "bootstrap"
   | "chakra"
   | "material"
-  | "tailwind";
+  | "tailwind"
+  | "uber";
 
 export type ModeOption =
   | "linear"
@@ -48,6 +49,10 @@ const MATERIAL_PRESET = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] as const;
 const TAILWIND_PRESET = [
   50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950,
 ] as const;
+const UBER_PRESET = [
+  100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400,
+  1500, 1600,
+] as const;
 
 const PRESETS: Record<PresetOption, readonly number[]> = {
   ant: ANT_DESIGN_PRESET,
@@ -55,6 +60,7 @@ const PRESETS: Record<PresetOption, readonly number[]> = {
   chakra: CHAKRA_PRESET,
   material: MATERIAL_PRESET,
   tailwind: TAILWIND_PRESET,
+  uber: UBER_PRESET,
 } as const;
 
 const SPREAD_MAP: Record<SpreadOption, number> = {
