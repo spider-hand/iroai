@@ -1,6 +1,6 @@
 # iroai
 
-<img width="300" alt="screenshot" src="https://github.com/user-attachments/assets/1de40aa5-aa62-4aba-95da-f105c4febd99" />
+<img width="240" alt="screenshot" src="https://github.com/user-attachments/assets/31b56415-030e-41bb-bbb2-009fec369a9c" />
 
 Generate color shades in CLI
 
