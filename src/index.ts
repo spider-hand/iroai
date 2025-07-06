@@ -162,10 +162,11 @@ function getShadeColor(
     b = Math.round(b * (1 - factor));
   }
 
-  const hexString =
+  const hexString = (
     `#${r.toString(16).padStart(2, "0")}` +
     `${g.toString(16).padStart(2, "0")}` +
-    `${b.toString(16).padStart(2, "0")}`.toUpperCase();
+    `${b.toString(16).padStart(2, "0")}`
+  ).toUpperCase();
 
   const hslString = convertIntoHSL(hexString);
 
