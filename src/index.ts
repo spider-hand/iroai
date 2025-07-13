@@ -45,7 +45,9 @@ const BOOTSTRAP_PRESET = [100, 200, 300, 400, 500, 600, 700, 800, 900] as const;
 const CHAKRA_PRESET = [
   50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950,
 ] as const;
-const MATERIAL_PRESET = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100] as const;
+const MATERIAL_PRESET = [
+  0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 98, 99, 100,
+] as const;
 const TAILWIND_PRESET = [
   50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950,
 ] as const;
